@@ -7,7 +7,6 @@
     <meta name="keywords" content="HTML">
     <meta name="author" content="Alexandre Carvalho">
     <script type="module" src="../../API.js"></script>
-    <script type="module" src="../../Test.js"></script>
     <link rel="stylesheet" href="./../../CSS/baseCSS.css">
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <script type="module" src="../work/creative-work.js"></script>
@@ -37,35 +36,36 @@
         <p>
             Currently the total global death toll is <a class="ChangingTextDeaths"></a>. Sure, comparing that to <a class="ChangingTextRecovered"></a> people that have recovered it ‘doesn’t seem so bad’ but that’s bullshit. That is <a class="ChangingTextDeaths"></a> people whose lives were stolen, just because ‘they’ are people who are far away or people you can’t even perceive. Does not mean it isn’t tragic or treated as a simple statistic. The world lost <a class="ChangingTextDeaths"></a> mothers, fathers, sons, daughter, lovers, best friends and loved ones. The wind is slapping <a class="ChangingTextDeaths"></a> new gravestones, never forget that. 
         </p>
+   
+    <svg width=100% height="calc(100px + 20vw)">
+        <rect width= "100%" height= "100%" fill= "#6f6282"/>
+        <!---The Visuals-->
+        <circle class="target4" cx="50%" cy="50%" r=10vw fill="#2d222a"/>  <!--Most Recent Value-->
+        <circle class="target3" cx="50%" cy="50%" r=6vw fill="#544130"/>
+        <circle class="target2" cx="50%" cy="50%" r=4vw fill="#7c6136"/>
+        <circle class="target1" cx="50%" cy="50%" r=2vw fill="#a3803c"/>
+        <circle class="target0" cx="50%" cy="50%" r=1vw fill="#ffc94a"/>  <!--Oldest Value-->
+        <!---The Index-->
+        <text   x="10%"  y ="25%" font-size="calc(10px + 1vw)" text-anchor="middle" fill="#F5F5F5">Total Loses</text> 
 
-        <p>
-            Below is a graph that shows the current total number of recorded deaths in South Africa. Each circle represents the total number of deaths there was at that point and each circle is 1 month apart. 
-        </p>
-    
-    <svg  width=100% height=250>
-        <rect width="100%" height="100%" fill="#6f6282"/>
-        
-        <circle class="target0" cx="10%" cy="50%" r=5vw fill="225"/>
-        <text id="Date1" x="10%" y="15%" font-size= "calc(12px + 1vw)" text-anchor="middle" fill="#ffc94a">Day 1</text>
-        <text  x="10%" y="90%" font-size="calc(6px + 1vw)" text-anchor="middle" fill="white">06/05/2020</text>  
-        
-        <circle class="target1" cx="30%" cy="50%" r=5vw fill="225"/>
-        <text id="Date2" x="30%" y="15%" font-size= "calc(12px + 1vw)" text-anchor="middle" fill="#ffc94a">Day 2</text>
-        <text  x="30%" y="90%" font-size="calc(6px + 1vw)" text-anchor="middle" fill="white">06/06/2020</text>
+        <circle cx="80%" cy="90%" r="calc(5px + 1vw)" fill="#2d222a"/>  
+        <text   x="90%"  y ="92.5%" font-size="calc(5px + 1vw)" text-anchor="middle" fill="#F5F5F5">2020/09/06</text> 
 
-        <circle class="target2" cx="50%" cy="50%" r=5vw fill="225"/>
-        <text id="Date3" x="50%" y="15%" font-size= "calc(12px + 1vw)" text-anchor="middle" fill="#ffc94a">Day 3</text>
-        <text  x="50%" y="90%" font-size="calc(6px + 1vw)" text-anchor="middle" fill="white">06/07/2020</text>
+        <circle cx="80%" cy="70%" r="calc(5px + 1vw)" fill="#544130"/>
+        <text   x="90%"  y ="72.5%" font-size="calc(5px + 1vw)" text-anchor="middle" fill="#F5F5F5">2020/08/06</text> 
 
-        <circle class="target3" cx="70%" cy="50%" r=5vw fill="225"/>
-        <text id="Date4" x="70%" y="15%" font-size= "calc(12px + 1vw)" text-anchor="middle" fill="#ffc94a">Day 4</text>
-        <text  x="70%" y="90%" font-size="calc(6px + 1vw)" text-anchor="middle" fill="white">06/08/2020</text>  
-        
+        <circle cx="80%" cy="50%" r="calc(5px + 1vw)" fill="#7c6136"/>
+        <text   x="90%"  y ="52.5%" font-size="calc(5px + 1vw)" text-anchor="middle" fill="#F5F5F5">2020/07/06</text> 
 
-        <circle class="target4" cx="90%" cy="50%" r=5vw fill="225"/>
-        <text id="Date5" x="90%" y="15%" font-size= "calc(12px + 1vw)" text-anchor="middle" fill="#ffc94a">Day 5</text>
-        <text  x="90%" y="90%" font-size="calc(6px + 1vw)" text-anchor="middle" fill="white">06/09/2020</text>  
-        
+        <circle cx="80%" cy="30%" r="calc(5px + 1vw)" fill="#a3803c"/>
+        <text   x="90%"  y ="32.5%" font-size="calc(5px + 1vw)" text-anchor="middle" fill="#F5F5F5">2020/06/06</text> 
+
+        <circle cx="80%" cy="10%" r="calc(5px + 1vw)" fill="#ffc94a"/> 
+        <text   x="90%"  y ="12.5%" font-size="calc(5px + 1vw)" text-anchor="middle" fill="#F5F5F5">2020/05/06</text>
+
+
+        <text id="DisplayValue" x="10%" y="50%" font-size= "calc(12px + 3vw)" text-anchor="middle" fill="#ffc94a">0</text> 
+
     </svg>
     </article>
     

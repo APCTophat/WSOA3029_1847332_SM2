@@ -1,17 +1,18 @@
-fetch('https://api.covid19api.com/summary')
-.then(response => response.json())
+fetch('https://api.covid19api.com/summary') 
+.then(response => response.json())             
 .then(data => {console.log(data)
-    let TotalDeaths = data.Global.TotalDeaths
+    let TotalDeaths = data.Global.TotalDeaths   
     let ClassLengthTotallDeaths = document.getElementsByClassName("ChangingTextDeaths").length;
     for (let i = 0; i < ClassLengthTotallDeaths; i++){
-        document.getElementsByClassName("ChangingTextDeaths")[i].innerText = TotalDeaths;
+        document.getElementsByClassName("ChangingTextDeaths")[i].innerText = TotalDeaths;   
     }  
     let TotalRecovered = data.Global.TotalRecovered
     document.getElementsByClassName("ChangingTextRecovered")[0].innerText = TotalRecovered
 })
-fetch('https://api.covid19api.com/total/country/south-africa')
-.then(response => response.json())
-.then(data => {console.log('pcik me',data)
+
+fetch('https://api.covid19api.com/total/country/south-africa')  
+.then(response => response.json())                               
+.then(data => {console.log('pcik me',data)                        
     let Deaths06_05_2020 = data[105].Deaths
     document.getElementById("Date1").innerHTML = Deaths06_05_2020
 
@@ -33,7 +34,7 @@ fetch('https://api.covid19api.com/total/country/south-africa')
 
     let Radius2 = (Deaths06_06_2020 / Deaths06_09_2020) * 5
     let Radius2Name = Radius2+'vw'
-    d3.select('.target1').style("r", Radius2Name)
+    d3.select('.target1').style("r", Radius2Name) 
 
     let Radius3 = (Deaths06_07_2020 / Deaths06_09_2020) * 5
     let Radius3Name = Radius3+'vw'

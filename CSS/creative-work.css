@@ -1,0 +1,38 @@
+@media only screen and (min-width: 280px) {
+    .Vis-Text-S {
+       
+        font-size: calc(7.5px + 1vw);
+    }
+
+    .SVG-s{
+        height: calc(100px + 20vw);
+    }
+    
+}
+
+@media only screen and (min-width: 400px) {
+   .Vis-Text-M{
+       
+       font-size: calc(10px + 1vw); 
+    }
+    .SVG-M{
+        height: calc(200px + 20vw);
+    }
+  
+}
+
+@media only screen and (min-width: 700px) {
+    .Vis-Text-B{
+        
+        font-size: calc(15px + 1vw);
+    }
+
+    .SVG-B{
+        height: calc(300px + 20vw);
+    }
+
+    .Vis-Cir-B{
+        fill: tomato;
+    }
+}
+

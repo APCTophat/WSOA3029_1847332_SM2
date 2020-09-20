@@ -7,12 +7,23 @@
     <meta name="keywords" content="HTML">
     <meta name="author" content="Alexandre Carvalho">
     <link rel="stylesheet" href="./../../CSS/baseCSS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="module" src="./../../Nav.js"></script>
     <title>Blog Week 3</title>
    <style>
+    
        .BlogImage{
-           max-width: 30%;
-           width: 50vw;
-       }
+            max-width: 30%;
+            width: 50vw;
+            max-width: 500px;
+                max-height: 600px;
+        }
+
+       
+            .PhotoHolder{
+                display:flex;
+                justify-content: center;
+            }
    </style>
 </head>
 <body>
@@ -25,6 +36,14 @@
                 <a class="BlogArchiveButton" href="../blogs.html">Blog Archive</a>
             </section>
         </section>
+        <div class="BurgerMenu">
+            <a href="./../index.html" class="Namespace">Homepage</a>
+            <div id="CollapsedLinks">
+                <a href="./../blogs.html">Blog Archive</a>
+            </div>
+            <a href="javascript:void(0);" class="icon">
+            <i class="fa fa-bars"></i></a>
+        </div>  
     </header>
     <article class="BlogArticle">
         <h2 id="BlogHeading">An analysis of Michael Friendly’s “A brief history of data visualization”</h2>
@@ -34,7 +53,9 @@
         <p>
             To create a comprehensive idea of the use of data visualization throughout history Friendly represents the data visually in a graph (without a hint of irony). This allows us to see how much data visualisation was used over certain ‘milestones’ of history. The graph taken from page 3 of <i>A brief history of data visualisation</i> by Michael Friendly:
         </p>
+        <div class="PhotoHolder">
         <img class="BlogImage" src="../../WebsiteReasources/Micheal Friendly's Figure 1 Milestones.png" alt="Graph by Micheal Friendly Milestones: Time course of developments" width="400px">
+        </div>
         <p>
             
 As this graph clearly indicates that data visualisation has been on a general rise over the centuries but that its certainly is not a ‘young’ phenomenon. I will briefly cover each ‘milestone’ presented by Michael Friendly, describing what information was being represented and how it was represented.

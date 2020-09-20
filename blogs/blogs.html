@@ -7,26 +7,108 @@
     <meta name="keywords" content="HTML">
     <meta name="author" content="Alexandre Carvalho">
     <link rel="stylesheet" href="./../CSS/baseCSS.css">
-    <title>blogs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="module" src="./../Nav.js"></script>
+    <title>Blogs</title>
 </head>
+
+<style>
+
+  /*  @media (max-width: 420px) {
+   
+        .blog-grid-main{
+            width: 100%;
+            padding-top: 2%;
+            display:flex;
+            flex-direction: column;
+    }
+    }*/
+    @media (min-width: 420px) {
+   .blog-grid-main{
+            width: 100%;
+            padding-top: 2%;
+            display: flex;
+            flex-direction: row;
+           justify-content: space-evenly;
+           align-items: center;
+    }
+    }
+
+    .blog-post{
+        padding: 1%;
+        height: calc(100px + 5vw);
+        width: calc(100px + 10vw);
+        background-color: black;
+    }
+    .blog-post a{
+        text-decoration: none;
+    }
+    
+   
+    .blog-post-image img{
+        max-width: 100%;
+        max-height: 50%;
+    }
+    .blog-post-text{
+        height: 40%;
+        align-content: center;
+    }
+</style>
 <body>
     <header>
-        <section class="Nav_Bar">
+           <section class="Nav_Bar">
             <section class="NavButton">
-                <a href="../index.html">HomePage</a>
+                <a href="../index.html">Homepage</a>
             </section>
-           </section>
+            <section class="NavButton">
+                <a href="../../about/about.html">About Section</a>
+            </section>
+            <section class="NavButton">
+                <a href="../../blogs/blogs.html">Blog Section</a>
+            </section>
+            <section class="NavButton">
+                <a href="../../creative/work/creative-work.html">Creative Work</a>
+            </section>
+            <section class="NavButton">
+                <a  href="../Design/design.html">Design</a>
+            </section>
+        </section>
+
+        <div class="BurgerMenu">
+            <a href="./../index.html" class="Namespace">Homepage</a>
+            <div id="CollapsedLinks">
+                <a href="./../about/about.html">About Section</a>
+                <a href="../blogs/blogs.html">Blog Section</a>
+                <a href="../creative/work/creative-work.html">Creative Work</a>
+                <a  href="../Design/design.html">Design</a>
+            </div>
+            <a href="javascript:void(0);" class="icon">
+            <i class="fa fa-bars"></i></a>
+        </div>
         
     </header>
     <article class="content">
+            <div class="blog-grid-main">
+                <article class="blog-post">
+                    <a href="../about/about.html">
+                        <div class="blog-post-image"><img class="BlogImage" src="../WebsiteReasources/MOoM Base.png" alt="The base graph"></div>
+                        <div class="blog-post-text">blog 1</div>
+                    </a>
+                </article>
+                <article class="blog-post">
+                    <a href="../about/about.html">
+                        <div class="blog-post-image"><img class="BlogImage" src="../WebsiteReasources/MOoM Base.png" alt="The base graph"></div>
+                        <div class="blog-post-text">blog 2</div>
+                    </a>
+                </article>
+            </div>
         <Section class="blogNav">
             <ul>
-                <li><a href="./blog-1/blog-week-1.html">Week 1</a></li>
-                <li> <a href="./blog-1/blog-week-2.html">Week 2</a></li>
-                <li><a href="./blog-1/blog-week-3.html">Week 3</a></li>
-                <li>  <a href="./blog-1/blog-week-4.html">Week 4</a></li>
-                <li> <a href="./blog-1/blog-week-5.html">Week 5</a></li>
-
+                <li><a href="./blog-1/blog-week-1.html">Status of my website at the beginning of September</a></li>
+                <li><a href="./blog-1/blog-week-2.html">Theories of Representation</a></li>
+                <li><a href="./blog-1/blog-week-3.html">An analysis of Michael Friendly’s “A brief history of data visualization”</a></li>
+                <li><a href="./blog-1/blog-week-4.html">Data-Driven Storytelling</a></li>
+                <li><a href="./blog-1/blog-week-5.html">Representation and Communication</a></li>
             </ul>
         </Section>
             

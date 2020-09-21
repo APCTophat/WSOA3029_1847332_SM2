@@ -39,7 +39,7 @@
     
          .blog-post{
         padding: 1%;
-        height: calc(120px + 5vw);
+        height: calc(130px + 5vw);
         width: calc(100px + 10vw);
         transition: all, .2s ease-in-out;       
         }

@@ -1,0 +1,29 @@
+.ColourSwatchGrid{
+    width: 90%;
+    background-color:black;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 10px;
+    padding: 10px;
+    
+    height: calc(100px + 2vw);
+    
+} 
+
+.ColourSwatch1{
+    background-color: #41394d;
+    text-align: center;
+    flex-grow: 1;
+    
+}
+
+.ColourSwatch2{
+    background-color: #6f6282;
+    text-align: center;
+    flex-grow: 1;
+}
+.ColourSwatch3{
+    background-color: #FFC94A;
+    text-align: center;
+    flex-grow: 1;
+}

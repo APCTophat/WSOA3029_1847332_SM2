@@ -8,8 +8,11 @@
     <meta name="author" content="Alexandre Carvalho">
     
     <link rel="stylesheet" href="./CSS/baseCSS.css">
+    <link rel="stylesheet" href="./CSS/homepage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="module" src="./Nav.js"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script type="module" src="./JS/homepage.js"></script>
     <title>Homepage</title>
 </head>
 <body>
@@ -33,7 +36,7 @@
         </section>
 
         <div class="BurgerMenu">
-            <a href="index.html" class="Namespace">Homepage</a>
+            <a href="./index.html" class="Namespace">Homepage</a>
             <div id="CollapsedLinks">
                 <a href="./about/about.html">About Section</a>
                 <a href="./blogs/blogs.html">Blog Section</a>
@@ -44,7 +47,23 @@
             <i class="fa fa-bars"></i></a>
         </div>
     </header>
-    <div id="LandingPageImage"><img src="./WebsiteReasources/LandingPageImageV1.png"></div>
+    <svg class="Home-SVG-B Home-SVG-M Home-SVG-s" width=90% height="calc(600px)">
+        <rect width="100%" height="100%" fill="#595959"/>
+
+        <a href="./about/about.html">
+            <circle id="Link_Display_1" cx="10%" cy="75%" fill="#865e00"/>
+            <text id="Link_Text_1" x="10%" y="75%" text-anchor="middle" fill="#F5F5F5">About</text>
+        </a>
+        
+        <!-- <circle class="target3" cx="30%" cy="65%" r=6vw fill="#9e720a"/>
+        <circle class="target3" cx="35%" cy="30%" r=6vw fill="#cf9815"/>
+        <circle class="target3" cx="60%" cy="50%" r=6vw fill="#eab330"/>
+        <circle class="target3" cx="70%" cy="20%" r=6vw fill="#ffc94a"/>  -->
+       
+       
+       
+    </svg>
+    <!--<div id="LandingPageImage"><img src="./WebsiteReasources/LandingPageImageV1.png"></div> ---> 
     <footer id="Footer">
         <p>Author: Alex Carvalho <br>
         Student Number: 1847332

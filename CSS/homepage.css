@@ -1,3 +1,37 @@
-.Home-SVG-B{
-    padding: 5%;
+
+@media only screen and (min-width: 280px) {
+    .Home-SVG-S{
+        padding: 5%;
+        height: 300px;
+    } 
+    .ButtonText{
+        font-size: calc(7px + 1vw);;
+    }
 }
+
+@media only screen and (min-width: 400px) {
+
+    .Home-SVG-M{
+        padding: 5%;
+        height: 400px;
+    } 
+    .ButtonText{
+        font-size: calc(10px + 1vw);;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .Home-SVG-B{
+        padding: 5%;
+        height: 500px;
+    }
+    .ButtonText{
+        font-size: calc(15px + 1vw);;
+    }
+}
+
+
+
+
+
+

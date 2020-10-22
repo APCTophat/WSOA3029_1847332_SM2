@@ -27,3 +27,45 @@
     text-align: center;
     flex-grow: 1;
 }
+
+.ColourSwatchGrid2{
+    width: 90%;
+    background-color:black;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-column-gap: 10px;
+    padding: 10px;
+    
+    height: calc(100px + 2vw);
+    
+} 
+.ColourSwatch4{
+    background-color: #2d222a;
+    text-align: center;
+    flex-grow: 1;
+    
+}
+.ColourSwatch5{
+    background-color: #544130;
+    text-align: center;
+    flex-grow: 1;
+    
+}
+.ColourSwatch6{
+    background-color: #7c6136;
+    text-align: center;
+    flex-grow: 1;
+    
+}
+.ColourSwatch7{
+    background-color: #a3803c;
+    text-align: center;
+    flex-grow: 1;
+    
+}
+.ColourSwatch8{
+    background-color: #ffc94a;
+    text-align: center;
+    flex-grow: 1;
+    
+}

@@ -7,13 +7,13 @@
     <meta name="description" content="Page that contains my second graph">
     <meta name="keywords" content="HTML, css, JS, D3">
     <meta name="author" content="Alexandre Carvalho">
-    <script type="module" src="../../API.js"></script>
     <link rel="stylesheet" href="./../../CSS/baseCSS.css">
     <link rel="stylesheet" href="./../../CSS/creative-wok-2.css">
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <script type="module" src="../work/creative-work.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="module" src="../../Nav.js"></script>
+    <script type="module" src="../../creative/work/creative-work-2.js"></script>
     <title>creative-work</title>
 </head>
 
@@ -28,7 +28,7 @@
                 <a class="NavLink" href="./archive.html">Archive</a>
             </section>
             <section class="NavButton">
-                <a class="NavLink" href="">Previous</a>
+                <a class="NavLink" href="./creative-work-1.html">Previous</a>
             </section>
             <section class="NavButton">
                 <a class="NavLink" href="">Next</a>
@@ -39,7 +39,7 @@
             <a href="../../index.html" class="Namespace">Homepage</a>
             <div id="CollapsedLinks">
                 <a href="./archive.html">Archive</a>
-                <a href="">Previous</a>
+                <a href="./creative-work-1.html">Previous</a>
                 <a href="">Next</a>
             </div>
             <a href="javascript:void(0);" class="icon">
@@ -53,21 +53,37 @@
             <rect width="100%" height="100%" fill="#6f6282"/>
                
             <!--To work out the stroke-dashoffset for a new element in it: Circumference - all preceding segments' total length +  First segment's offset = Current Segment Offset-->
-            <svg class="Donut-Graph" width=100% height=100% viewBox="25 0 60 60"> 
+            <svg class="Donut-Graph" width=100% height=100% viewBox="15 0 60 60"> 
                 <circle class="donut-hole" cx=50% cy=50% r="15.91549430918952" fill="#6f6282"></circle>
-                <circle cass="donut-ring" cx=50% cy=50% r="15.91549430918952" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
+                
+                <circle id="donut-segment-1" cx=50% cy=50% r="15.91549430918952" fill="transparent" stroke="#ffc94a" stroke-width="3"></circle>
+               
     
-                <circle class="donut-segment" cx=50% cy=50% r="15.91549430918952" fill="transparent" stroke="#ce4b99" stroke-width="3" stroke-dasharray="85 15" stroke-dashoffset="25"></circle>
-    
-                <circle class="donut-segment" cx=50% cy=50% r="15.91549430918952" fill="transparent" stroke="#b1c94e" stroke-width="3" stroke-dasharray="15 85" stroke-dashoffset="40"></circle>
+                <circle id="donut-segment-2" cx=50% cy=50% r="15.91549430918952" fill="transparent" stroke="#a3803c" stroke-width="3" stroke-dasharray="20 80" stroke-dashoffset="105"></circle>
+
+                <circle id="donut-segment-3" cx=50% cy=50% r="15.91549430918952" fill="transparent" stroke="#7c6136" stroke-width="3" stroke-dasharray="20 80" stroke-dashoffset="85"></circle>
+
+                <circle id="donut-segment-4" cx=50% cy=50% r="15.91549430918952" fill="transparent" stroke="#544130" stroke-width="3" stroke-dasharray="20 80" stroke-dashoffset="65"></circle>
+
+                <circle id="donut-segment-5" cx=50% cy=50% r="15.91549430918952" fill="transparent" stroke="#2d222a" stroke-width="3" stroke-dasharray="20 80" stroke-dashoffset="45"></circle>
+
+               
             </svg>
-            <svg class="Donut-Graph" width=100% height=100% viewBox="-25 0 60 60"> 
-                <circle class="donut-hole" cx=50% cy=50% r="15.91549430918952" fill="#6f6282"></circle>
-                <circle cass="donut-ring" cx=50% cy=50% r="15.91549430918952" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
-    
-                <circle class="donut-segment" cx=50% cy=50% r="15.91549430918952" fill="transparent" stroke="#ce4b99" stroke-width="3" stroke-dasharray="85 15" stroke-dashoffset="25"></circle>
-    
-                <circle class="donut-segment" cx=50% cy=50% r="15.91549430918952" fill="transparent" stroke="#b1c94e" stroke-width="3" stroke-dasharray="15 85" stroke-dashoffset="40"></circle>
+            <svg class="Index" width=100% height=100% > 
+            <circle class="Indext_Circle" cx="60%" cy="65%" r="calc(2px + 1vw)" fill="#2d222a" />
+            <text class="Index_Text" x="70%" y="66%" font-size="calc(5px + 1vw)" text-anchor="middle" fill="#F5F5F5">October 6th</text>
+
+            <circle cx="60%" cy="55%" r="calc(2px + 1vw)" fill="#544130" />
+            <text x="70%" y="56%" font-size="calc(5px + 1vw)" text-anchor="middle" fill="#F5F5F5">September 6th</text>
+
+            <circle cx="60%" cy="45%" r="calc(2px + 1vw)" fill="#7c6136" />
+            <text x="70%" y="46%" font-size="calc(5px + 1vw)" text-anchor="middle" fill="#F5F5F5">August 6th</text>
+
+            <circle cx="60%" cy="35%" r="calc(2px + 1vw)" fill="#a3803c" />
+            <text x="70%" y="36%" font-size="calc(5px + 1vw)" text-anchor="middle" fill="#F5F5F5">July 6th</text>
+
+            <circle cx="60%" cy="25%" r="calc(2px + 1vw)" fill="#ffc94a" />
+            <text x="70%" y="26%" font-size="calc(5px + 1vw)" text-anchor="middle" fill="#F5F5F5">June 6th</text>
             </svg>
         </svg>
     </article>

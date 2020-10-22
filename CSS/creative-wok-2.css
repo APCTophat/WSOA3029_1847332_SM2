@@ -7,6 +7,12 @@
     .SVG-s{
         height: calc(100px + 20vw);
     }
+
+    #DisplayText{
+        font-size: 0.6em;
+        text-anchor: middle;
+        
+    }
     
 }
 
@@ -18,6 +24,12 @@
     .SVG-M{
         height: calc(200px + 20vw);
     }
+
+    #DisplayText{
+        font-size: 0.5em;
+        text-anchor: middle;
+    }
+   
   
 }
 
@@ -34,4 +46,13 @@
     .Vis-Cir-B{
         fill: tomato;
     }
+
+    #DisplayText{
+        font-size: 0.4em;
+        text-anchor: middle;
+    }
+
+    
+   
 }
+

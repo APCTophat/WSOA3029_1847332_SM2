@@ -21,16 +21,7 @@ let Diff2;
 let Diff3;
 let Diff4;
 let Diff5;
-/*
-var x = window.matchMedia("(min-width: 700px)")
-  myFunction(x) // Call listener function at run time
-  x.addListener(myFunction) // Attach listener function on state changes
-*/
   function myFunction() {
-    
-        let Radius1 = (Deaths06_05_2020 / Deaths06_09_2020) * 17
-        let Radius1Name ="calc(10px + "+Radius1+"vw)"
-        d3.select('.target0').style("r", Radius1Name)
         //First work out the Difference between one month and the previous month
         Diff1 = Deaths06_06_2020 - Deaths06_05_2020
         Diff2 = Deaths06_07_2020 - Deaths06_06_2020
@@ -76,4 +67,136 @@ var x = window.matchMedia("(min-width: 700px)")
         d3.select('#donut-segment-5').style("stroke-dashoffset", Diff5Dashoffset.toString())
 
     } 
-  
+
+let Target1 = document.getElementById("Indext_Circle_5");
+let Target2 = document.getElementById("Indext_Circle_4");
+let Target3 = document.getElementById("Indext_Circle_3");
+let Target4 = document.getElementById("Indext_Circle_2");
+let Target5 = document.getElementById("Indext_Circle_1");
+d3.select('#DisplayText').attr("fill", "#6f6282")
+
+Target1.addEventListener('mouseover', function(){
+    d3.select('#donut-segment-2').style("opacity", 0.2)
+    d3.select('#donut-segment-3').style("opacity", 0.2)
+    d3.select('#donut-segment-4').style("opacity", 0.2)
+    d3.select('#donut-segment-5').style("opacity", 0.2);
+
+    document.getElementById("DisplayText").innerHTML = Diff1
+    d3.select('#DisplayText').attr("fill", " #ffc94a")
+})
+Target2.addEventListener('mouseover', function(){
+    d3.select('#donut-segment-1').style("opacity", 0.2)
+    d3.select('#donut-segment-3').style("opacity", 0.2)
+    d3.select('#donut-segment-4').style("opacity", 0.2)
+    d3.select('#donut-segment-5').style("opacity", 0.2);
+
+    document.getElementById("DisplayText").innerHTML = Diff2
+    d3.select('#DisplayText').attr("fill", " #ffc94a")
+})
+Target3.addEventListener('mouseover', function(){
+    d3.select('#donut-segment-2').style("opacity", 0.2)
+    d3.select('#donut-segment-1').style("opacity", 0.2)
+    d3.select('#donut-segment-4').style("opacity", 0.2)
+    d3.select('#donut-segment-5').style("opacity", 0.2);
+
+    document.getElementById("DisplayText").innerHTML = Diff3
+    d3.select('#DisplayText').attr("fill", " #ffc94a")
+})
+Target4.addEventListener('mouseover', function(){
+    d3.select('#donut-segment-2').style("opacity", 0.2)
+    d3.select('#donut-segment-1').style("opacity", 0.2)
+    d3.select('#donut-segment-3').style("opacity", 0.2)
+    d3.select('#donut-segment-5').style("opacity", 0.2);
+
+    document.getElementById("DisplayText").innerHTML = Diff4
+    d3.select('#DisplayText').attr("fill", " #ffc94a")
+})
+Target5.addEventListener('mouseover', function(){
+    d3.select('#donut-segment-2').style("opacity", 0.2)
+    d3.select('#donut-segment-1').style("opacity", 0.2)
+    d3.select('#donut-segment-3').style("opacity", 0.2)
+    d3.select('#donut-segment-4').style("opacity", 0.2);
+
+    document.getElementById("DisplayText").innerHTML = Diff5
+    d3.select('#DisplayText').attr("fill", " #ffc94a")
+    
+})
+
+
+Target1.addEventListener('mouseout', function(){
+    d3.select('#donut-segment-2').style("opacity", 1)
+    d3.select('#donut-segment-3').style("opacity", 1)
+    d3.select('#donut-segment-4').style("opacity", 1)
+    d3.select('#donut-segment-5').style("opacity", 1);
+
+    d3.select('#DisplayText').attr("fill", "#6f6282")
+})
+Target2.addEventListener('mouseout', function(){
+    d3.select('#donut-segment-1').style("opacity", 1)
+    d3.select('#donut-segment-3').style("opacity", 1)
+    d3.select('#donut-segment-4').style("opacity", 1)
+    d3.select('#donut-segment-5').style("opacity", 1);
+
+    d3.select('#DisplayText').attr("fill", "#6f6282")
+})
+Target3.addEventListener('mouseout', function(){
+    d3.select('#donut-segment-2').style("opacity", 1)
+    d3.select('#donut-segment-1').style("opacity", 1)
+    d3.select('#donut-segment-4').style("opacity", 1)
+    d3.select('#donut-segment-5').style("opacity", 1);
+
+    d3.select('#DisplayText').attr("fill", "#6f6282")
+})
+Target4.addEventListener('mouseout', function(){
+    d3.select('#donut-segment-2').style("opacity", 1)
+    d3.select('#donut-segment-3').style("opacity", 1)
+    d3.select('#donut-segment-1').style("opacity", 1)
+    d3.select('#donut-segment-5').style("opacity", 1);
+
+    d3.select('#DisplayText').attr("fill", "#6f6282")
+})
+Target5.addEventListener('mouseout', function(){
+    d3.select('#donut-segment-2').style("opacity", 1)
+    d3.select('#donut-segment-3').style("opacity", 1)
+    d3.select('#donut-segment-4').style("opacity", 1)
+    d3.select('#donut-segment-1').style("opacity", 1);
+
+    d3.select('#DisplayText').attr("fill", "#6f6282")
+})
+
+var x = window.matchMedia("(min-width: 700px)")
+var y = window.matchMedia('screen and (max-width: 400px)')
+Scale(x) // Call listener function at run time
+Scale2(y)
+x.addListener(Scale) // Attach listener function on state changes
+y.addListener(Scale2)
+
+function Scale2(y){
+if(y.matches){
+    d3.select('#Indext_Circle_1').style("r", "calc(5px + 1vw")
+    d3.select('#Indext_Circle_2').style("r", "calc(5px + 1vw")
+    d3.select('#Indext_Circle_3').style("r", "calc(5px + 1vw")
+    d3.select('#Indext_Circle_4').style("r", "calc(5px + 1vw")
+    d3.select('#Indext_Circle_5').style("r", "calc(5px + 1vw")
+}
+}
+function Scale(x) {
+  if (x.matches) { // The min-width == 700px
+    d3.select('#Indext_Circle_5').style("r", "calc(20px + 1vw")
+    d3.select('#Indext_Circle_4').style("r", "calc(20px + 1vw")
+    d3.select('#Indext_Circle_3').style("r", "calc(20px + 1vw")
+    d3.select('#Indext_Circle_2').style("r", "calc(20px + 1vw")
+    d3.select('#Indext_Circle_1').style("r", "calc(20px + 1vw")
+    
+  }
+  else{ //the min-width != 700px
+    d3.select('#Indext_Circle_5').style("r", "calc(10px + 1vw")
+    d3.select('#Indext_Circle_4').style("r", "calc(10px + 1vw")
+    d3.select('#Indext_Circle_3').style("r", "calc(10px + 1vw")
+    d3.select('#Indext_Circle_2').style("r", "calc(10px + 1vw")
+    d3.select('#Indext_Circle_1').style("r", "calc(10px + 1vw")
+   
+  }
+
+ 
+}

@@ -31,7 +31,7 @@
                 <a class="NavLink" href="./creative-work-1.html">Previous</a>
             </section>
             <section class="NavButton">
-                <a class="NavLink" href="">Next</a>
+               <!--<a class="NavLink" href="">Next</a> -->
             </section>
         </section>
 
@@ -40,7 +40,7 @@
             <div id="CollapsedLinks">
                 <a href="./archive.html">Archive</a>
                 <a href="./creative-work-1.html">Previous</a>
-                <a href="">Next</a>
+                <!--<a href="">Next</a>-->
             </div>
             <a href="javascript:void(0);" class="icon">
                 <i class="fa fa-bars"></i></a>
@@ -48,42 +48,45 @@
             
     </header>
     <article class="content">
-        <p>This will contain my explination for this graph</p>
+        <p>I want to highlight another line from the Clint Smith poem that stands out to me. It goes: <i>“There is no solace in rearranging language to make a different word tell the same lie.”</i> My understanding of this is that there is no comfort changing the words someone uses to ‘soften’ the impact of a phenomena. That this change of language is just adding to the lie originally created.
+        </p>
+        <P>
+            The graph I drew below showcases the number of new death cases in South Africa for the corresponding months. They are scaled relatively to one another so for example a viewer may look at October and see that it is smaller than August. With this graph indicating new deaths, they may infer that ‘things are getting better’ because ‘there are fewer new deaths’. 
+        </P>
+        <p>
+            However, this graph is just another rearranging of language to proliferate a lie. The graph is accurate and the assumption a viewer may make is a truthful one. It is the taking of human life and quantifying it to a ‘measurable value’ that is the lie. That adjust from ‘human souls’ to ‘data points’ for other humans to see patterns and make the reassuring claim that “things are getting better”. That is the lie language rearrangers that does not bring me comfort.
+        </p>
+        <p>
+            To make this graph I used the same Data set as the previous month just updating it by one month to be more present. I decided to make it a donut graph as I felt it was a good way to showcase these “data points’ in relation to one another. I also gave the index functionality, when a user hovers over or presses the index circles it will highlight and showcase its ‘value’ of the corresponding section on the graph. I also am adjusting the side of the index and text elements to try and make it fit in the three form factors.
+        </p>
         <svg class="SVG-B SVG-M SVG-S" width=100% height="calc(100px + 20vw)" >
             <rect width="100%" height="100%" fill="#6f6282"/>
                
             <!--To work out the stroke-dashoffset for a new element in it: Circumference - all preceding segments' total length +  First segment's offset = Current Segment Offset-->
             <svg class="Donut-Graph" width=100% height=100% viewBox="15 0 60 60"> 
-                <circle class="donut-hole" cx=50% cy=50% r="15.91549430918952" fill="#6f6282"></circle>
+                <circle class="donut-hole" cx=50% cy=50% r="15.91549430918952" fill="transparent"></circle>
+                <circle id="donut-segment-1" cx=50% cy=50% r="15.91549430918952" fill="transparent" stroke="#ffc94a" stroke-width="4"></circle>
+                <circle id="donut-segment-2" cx=50% cy=50% r="15.91549430918952" fill="transparent" stroke="#a3803c" stroke-width="4"></circle>
+                <circle id="donut-segment-3" cx=50% cy=50% r="15.91549430918952" fill="transparent" stroke="#7c6136" stroke-width="4"></circle>
+                <circle id="donut-segment-4" cx=50% cy=50% r="15.91549430918952" fill="transparent" stroke="#544130" stroke-width="4"></circle>
+                <circle id="donut-segment-5" cx=50% cy=50% r="15.91549430918952" fill="transparent" stroke="#2d222a" stroke-width="4"></circle>
                 
-                <circle id="donut-segment-1" cx=50% cy=50% r="15.91549430918952" fill="transparent" stroke="#ffc94a" stroke-width="3"></circle>
-               
-    
-                <circle id="donut-segment-2" cx=50% cy=50% r="15.91549430918952" fill="transparent" stroke="#a3803c" stroke-width="3" stroke-dasharray="20 80" stroke-dashoffset="105"></circle>
-
-                <circle id="donut-segment-3" cx=50% cy=50% r="15.91549430918952" fill="transparent" stroke="#7c6136" stroke-width="3" stroke-dasharray="20 80" stroke-dashoffset="85"></circle>
-
-                <circle id="donut-segment-4" cx=50% cy=50% r="15.91549430918952" fill="transparent" stroke="#544130" stroke-width="3" stroke-dasharray="20 80" stroke-dashoffset="65"></circle>
-
-                <circle id="donut-segment-5" cx=50% cy=50% r="15.91549430918952" fill="transparent" stroke="#2d222a" stroke-width="3" stroke-dasharray="20 80" stroke-dashoffset="45"></circle>
-
-               
+                <text id="DisplayText" x=50% y=55%>7000</text>
+                
             </svg>
             <svg class="Index" width=100% height=100% > 
-            <circle class="Indext_Circle" cx="60%" cy="65%" r="calc(2px + 1vw)" fill="#2d222a" />
-            <text class="Index_Text" x="70%" y="66%" font-size="calc(5px + 1vw)" text-anchor="middle" fill="#F5F5F5">October 6th</text>
+            <circle id="Indext_Circle_1" cx="85%" cy="75%"  fill="#2d222a"/>
+            <circle id="Indext_Circle_2" cx="85%" cy="60%"  fill="#544130"/>
+            <circle id="Indext_Circle_3" cx="85%" cy="45%"  fill="#7c6136"/>
+            <circle id="Indext_Circle_4" cx="85%" cy="30%"  fill="#a3803c"/>
+            <circle id="Indext_Circle_5" cx="85%" cy="15%"  fill="#ffc94a"/>
 
-            <circle cx="60%" cy="55%" r="calc(2px + 1vw)" fill="#544130" />
-            <text x="70%" y="56%" font-size="calc(5px + 1vw)" text-anchor="middle" fill="#F5F5F5">September 6th</text>
-
-            <circle cx="60%" cy="45%" r="calc(2px + 1vw)" fill="#7c6136" />
-            <text x="70%" y="46%" font-size="calc(5px + 1vw)" text-anchor="middle" fill="#F5F5F5">August 6th</text>
-
-            <circle cx="60%" cy="35%" r="calc(2px + 1vw)" fill="#a3803c" />
-            <text x="70%" y="36%" font-size="calc(5px + 1vw)" text-anchor="middle" fill="#F5F5F5">July 6th</text>
-
-            <circle cx="60%" cy="25%" r="calc(2px + 1vw)" fill="#ffc94a" />
-            <text x="70%" y="26%" font-size="calc(5px + 1vw)" text-anchor="middle" fill="#F5F5F5">June 6th</text>
+            <text class="Index_Text_1" x="70%" y="76%" font-size="calc(5px + 1vw)" text-anchor="middle" fill="#F5F5F5">October 6th</text>
+            <text class="Index_Text_2" x="70%" y="61%" font-size="calc(5px + 1vw)" text-anchor="middle" fill="#F5F5F5">September 6th</text>
+            <text class="Index_Text_3" x="70%" y="46%" font-size="calc(5px + 1vw)" text-anchor="middle" fill="#F5F5F5">August 6th</text>
+            <text class="Index_Text_4" x="70%" y="30%" font-size="calc(5px + 1vw)" text-anchor="middle" fill="#F5F5F5">July 6th</text>
+            <text class="Index_Text_5" x="70%" y="16%" font-size="calc(5px + 1vw)" text-anchor="middle" fill="#F5F5F5">June 6th</text>
+            <text class="Index_Text_5" x="85%" y="8%" font-size="calc(5px + 1vw)" text-anchor="middle" fill="#F5F5F5">Select:</text>
             </svg>
         </svg>
     </article>

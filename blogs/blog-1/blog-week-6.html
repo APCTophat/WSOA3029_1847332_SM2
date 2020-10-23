@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the Blog post number 6">
+    <meta name="keywords" content="HTML">
+    <meta name="author" content="Alexandre Carvalho">
+    <link rel="stylesheet" href="./../../CSS/baseCSS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="module" src="./../../Nav.js"></script>
+    <title>Blog Week 6</title>
+    <style>
+        .BlogImage{
+            max-width: 30%;
+            width: 50vw;
+            max-width: 500px;
+                max-height: 600px;
+        }
+
+       
+            .PhotoHolder{
+                display:flex;
+                justify-content: center;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <section class="Nav_Bar">
+            <section class="NavButton">
+                <a class="HomeButton, NavLink" href="../../index.html">Home</a> 
+            </section>
+            <section class="NavButton">
+                <a class="BlogArchiveButton, NavLink" href="../blogs.html">Blog Archive</a>
+            </section>
+            <section class="NavButton">
+                <a class="NavLink" href="./blog-week-4.html">Previous Blog</a>
+            </section>
+        </section>
+        <div class="BurgerMenu">
+            <a href="../../index.html" class="Namespace">Homepage</a>
+            <div id="CollapsedLinks">
+                <a href="./../blogs.html">Blog Archive</a>
+                <a href="./blog-week-5.html">Previous Blog</a>
+                
+            </div>
+            <a href="javascript:void(0);" class="icon">
+            <i class="fa fa-bars"></i></a>
+        </div>  
+    </header>
+    <article class="BlogArticle">
+        <h2 id="BlogHeading">My graphs</h2>
+        <p>
+            Before I break down my graphs, I need to address the issue that I currently as of the 23rd of October only have 2 graphs instead of the required 3. The reason for this is due to the lack of time dedicated to working on the website. As I have had to split my focus between two other subjects and other areas of my website. Whilst I feel I would be able to make a 3rd graph before this submission deadline, I believe that it would be lacklustre and not the same quality as my current two graphs.
+        </p>
+        <h3>What I am making and Why</h3>
+        <p>
+            For inspiration for what to make my graphs about I have taken inspiration from the poem <i>When people say, “we have made it through worse before”</i> by Clint Smith. With the data we are required to used cantered around Covid-19 the poem as it seemed applicable to me. To figure out what my ‘topic for a graph would be I am choosing either a line or section that contains a particular theme and centring my graph around that theme.
+        </p>
+        <p>
+            I am trying to use my graph to illustrate the point I am trying to make from the inspiration form the poem. With the goal to make the viewer consider what is the ‘data’ they are looking at. Since my graphs have a more morbid focus on the loss associated with the pandemic. Ultimately, I would like if my graphs to illustrate that human life is more than just a data point.
+        </p>
+
+        <h3>Graph 1</h3>
+        <p>Below is graph number one in its base state not being interacted with. The main feature is that of the circles within circles with each larger circle enveloping all the smaller ones around it. My intention with this design was to showcase the ‘ballooning’ nature of the deaths cause by Covid-19 in South Africa. With the line I am taking inspiration from being <i> “all I hear is the wind slapping against the gravestones of those who did not make it,”</i></p>
+        <p>
+            I did this by drawing multiple circles on top of one another using SVG. Then using Java and D3 to manipulate their radius depending on the data gotten from an Covid-19 API. The index is also drawn using SVG and Text elements and functions to help the viewer understand my graph. 
+        </p>
+        <div class="PhotoHolder">
+        <img class="BlogImage" src="../../WebsiteReasources/Graph_1_Base.png" alt="The base graph for diagram 1">
+        </div>
+        <p>
+            The graph is also interactable as seen by the image below. I am doing this using Java and D3 to manipulate the graph to highlight what the individual wants to be highlighted. In the example below August has been highlighted and so the other months are made dimmer and a number appears that showcase ‘the number of new gravestones.' This intractability allows my graph to appear quite plane and simple whilst allowing me to showcase more information if a viewer wants to know more.  
+        </p>
+        <div class="PhotoHolder">
+            <img class="BlogImage" src="../../WebsiteReasources/Graph_1_Active.png" alt="The active graph for diagram 1">
+        </div>
+        <h3>Graph 2</h3>
+        <p>
+            The line that inspired me for the second graph was <i> there is no solace in rearranging language to make a different word tell the same lie. </i> The focus I had for this graph was to use the same data and use it in a different way. Showcasing ‘human life’ as ‘data’ like I did in the previous graph. My intention with this graph is to incite the idea that “things are getting better” whilst still reminding people that they are making this call on the backs of other human life. I am using a donut graph as it allows for easy comparison and relative data.
+        </p>
+        <p>
+            This graph is drawn with circular stokes that add up to a completed circle. Which allows for each graph element to be compared to the other elements. I have also included an index with the dates to help inform the viewer what the data relates to. Below is the base form of the graph whilst it is not being interacted with.
+        </p>
+        <div class="PhotoHolder">
+            <img class="BlogImage" src="../../WebsiteReasources/Graph_2_Base.png" alt="The base graph for diagram 2">
+        </div>
+            <p>
+                With this graph the viewer interacts with the index to gain more information about the graph. Like the previous graph when an element is highlighted, the other elements fade away and a text elements display showing more information.
+            </p>
+        <div class="PhotoHolder">
+            <img class="BlogImage" src="../../WebsiteReasources/Graph_2_Active.png" alt="The active graph for diagram 2">
+        </div>  
+
+        <p>
+            I have tried to keep the style of my graphs consistent with the colours and shapes I am using being the same. Using the purples for the backgrounds and the yellow gradient as contrast. Then keeping the use of circles throughout to try and keep some consistency between the graphs.
+        </p>
+       
+    </article>
+</body>
+</html>

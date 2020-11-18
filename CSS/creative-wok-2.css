@@ -51,8 +51,18 @@
         font-size: 0.4em;
         text-anchor: middle;
     }
+}
 
-    
-   
+
+#QuoteContainer{
+    border: solid 2px #ffc94a;
+    background-color:#6f6282;
+    font-size: calc(12px + 2vw);
+    text-align: center;
+
+    padding-top: calc(10px + 1vw);
+    padding-bottom: calc(10px + 1vw);
+    padding-left: 5px;
+    padding-right: 5px;
 }
 

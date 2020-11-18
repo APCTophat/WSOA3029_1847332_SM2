@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page that contains my second graph">
+    <meta name="keywords" content="HTML, css, JS, D3">
+    <meta name="author" content="Alexandre Carvalho">
+    <link rel="stylesheet" href="./../../CSS/baseCSS.css">
+    <script type="module" src="../../creative/work/creative-work-3.js"></script>
+    <link rel="stylesheet" href="./../../CSS/creative-work-3.css">
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="module" src="../../Nav.js"></script>
+    <title>creative-work-3</title>
+</head>
+
+<body>
+    <header>
+
+        <section class="Nav_Bar">
+            <section class="NavButton">
+                <a class="NavLink" href="../../index.html">Homepage</a>
+            </section>
+            <section class="NavButton">
+                <a class="NavLink" href="./archive.html">Archive</a>
+            </section>
+            <section class="NavButton">
+                <a class="NavLink" href="./creative-work-2.html">Previous</a>
+            </section>
+            <section class="NavButton">
+               <!--<a class="NavLink" href="">Next</a> -->
+            </section>
+        </section>
+
+        <div class="BurgerMenu">
+            <a href="../../index.html" class="Namespace">Homepage</a>
+            <div id="CollapsedLinks">
+                <a href="./archive.html">Archive</a>
+                <a href="./creative-work-2.html">Previous</a>
+                <!--<a href="">Next</a>-->
+            </div>
+            <a href="javascript:void(0);" class="icon">
+                <i class="fa fa-bars"></i></a>
+        </div>
+            
+    </header>
+    <article class="content"> 
+            <p id="QuoteContainer">"Some of us have become ghosts by the time the dust has settled."</p>
+            <svg class="SVG-B SVG-M SVG-S" width=100% height="calc(100px + 20vw)">
+                <rect width="100%" height="100%" fill="#6f6282"/>
+                <g id="RecoveredGraph">
+                   
+
+                    <g class="GraphBars">
+                        <rect class="Bar" x=10% y=10% height="calc(100px + 1vw)" fill="#f5f5f5"/> 
+                        <rect class="Bar" x=20% y=10% height="calc(110px + 1vw)" fill="#f5f5f5"/> 
+                        <rect class="Bar" x=30% y=10% height="calc(140px + 1vw)" fill="#f5f5f5"/> 
+                        <rect class="Bar" x=40% y=10% height="calc(160px + 1vw)" fill="#f5f5f5"/> 
+                        <rect class="Bar" x=50% y=10% height="calc(180px + 1vw)" fill="#f5f5f5"/> 
+                    </g>
+
+                    <line id="lineY" x1="7.5%" x2="7.5%" y1="10%" y2="90%" style="stroke:rgb(65,57,77);stroke-width:2"/>
+                    <line id="lineX" x1="7.5%" x2="60%" y1="90%" y2="90%" style="stroke:rgb(65,57,77);stroke-width:2"/>
+                    
+                </g>
+            </svg>
+    </article>
+
+
+</body>
+
+</html>

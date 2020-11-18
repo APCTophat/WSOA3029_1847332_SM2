@@ -50,20 +50,35 @@
             <p id="QuoteContainer">"Some of us have become ghosts by the time the dust has settled."</p>
             <svg class="SVG-B SVG-M SVG-S" width=100% height="calc(100px + 20vw)">
                 <rect width="100%" height="100%" fill="#6f6282"/>
-                <g id="RecoveredGraph">
-                   
-
+                <g id="DeathGraph">
                     <g class="GraphBars">
-                        <rect class="Bar" x=10% y=10% height="calc(100px + 1vw)" fill="#f5f5f5"/> 
-                        <rect class="Bar" x=20% y=10% height="calc(110px + 1vw)" fill="#f5f5f5"/> 
-                        <rect class="Bar" x=30% y=10% height="calc(140px + 1vw)" fill="#f5f5f5"/> 
-                        <rect class="Bar" x=40% y=10% height="calc(160px + 1vw)" fill="#f5f5f5"/> 
-                        <rect class="Bar" x=50% y=10% height="calc(180px + 1vw)" fill="#f5f5f5"/> 
+                        <rect class="BarD" id=DBar1 x=11% y=11% height="20%" fill="#a1a1a1" fill-opacity="0.2"/> 
+                        <rect class="BarD" id=DBar2 x=21% y=11% height="80%" fill="#a1a1a1" fill-opacity="0.2"/> 
+                        <rect class="BarD" id=DBar3 x=31% y=11% height="50%" fill="#a1a1a1" fill-opacity="0.2"/> 
+                        <rect class="BarD" id=DBar4 x=41% y=11% height="80%" fill="#a1a1a1" fill-opacity="0.2"/> 
+                        <rect class="BarD" id=DBar5 x=51% y=11% height="80%" fill="#a1a1a1" fill-opacity="0.2"/> 
                     </g>
-
+                    <g class=GraphText>
+                        <text id="MinY" x=5% y=85% fill="rgba(161, 161, 161, 0.2)" font-size="calc(5px + 1vw)">0</text>
+                        <text id="MaxY" x=3% y=7% fill="rgba(161, 161, 161, 0.2)" font-size="calc(5px + 1vw)">7000</text>
+                    </g>
+                    <line id="lineY" x1="8%" x2="8%" y1="9%" y2="89%" style="stroke:rgb(65,57,77);stroke-width:2;stroke-opacity:0.2"/>
+                    <line id="lineX" x1="8%" x2="60.5%" y1="89%" y2="89%" style="stroke:rgb(65,57,77);stroke-width:2;stroke-opacity:0.2"/>
+                </g>
+                <g id="RecoveredGraph">
+                    <g class="GraphBars">
+                        <rect class="BarR" id=RecBar1 x=10% y=10% height="40%" fill="#2d222a" fill-opacity="1"/> 
+                        <rect class="BarR" id=RecBar2 x=20% y=10% height="50%" fill="#544130" fill-opacity="1"/> 
+                        <rect class="BarR" id=RecBar3 x=30% y=10% height="60%" fill="#7c6136" fill-opacity="1"/> 
+                        <rect class="BarR" id=RecBar4 x=40% y=10% height="70%" fill="#a3803c" fill-opacity="1"/> 
+                        <rect class="BarR" id=RecBar5 x=50% y=10% height="80%" fill="#ffc94a" fill-opacity="1"/> 
+                    </g>
+                    <g class=GraphText>
+                        <text id="MinY" x=4% y=90% fill="whitesmoke" font-size="calc(5px + 1vw)">0</text>
+                        <text id="MaxY" x=1% y=12% fill="whitesmoke" font-size="calc(5px + 1vw)">300K</text>
+                    </g>
                     <line id="lineY" x1="7.5%" x2="7.5%" y1="10%" y2="90%" style="stroke:rgb(65,57,77);stroke-width:2"/>
                     <line id="lineX" x1="7.5%" x2="60%" y1="90%" y2="90%" style="stroke:rgb(65,57,77);stroke-width:2"/>
-                    
                 </g>
             </svg>
     </article>

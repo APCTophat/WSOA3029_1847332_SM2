@@ -7,8 +7,24 @@
         transform: translate(0, calc(50px + 20vw)) scale(1,-1);
     }
 
-    #MaxY, #MinY{
+    .MaxY, .MinY, #IndexTitle{
         font-size: calc(5px + 1vw);
+    }
+
+    .Rec_Index_Text, .Rec_Index_Value, .Death_Index_Value{
+        font-size: calc(3px + 1vw);
+    }
+
+    .ButtonHolder{
+        height: calc(50px + 1vw);
+    }
+
+    .InteractionText{
+        font-size: calc(8px + 1vw);
+    }
+
+    .BarD, .BarR{
+        width: calc(8px + 2vw);
     }
 }
 
@@ -20,8 +36,23 @@
     .GraphBars{
         transform: translate(0, calc(100px + 20vw)) scale(1,-1);
     }  
-    #MaxY, #MinY{
+    .MaxY, .MinY, #IndexTitle{
         font-size: calc(5px + 1vw);
+    }
+
+    .Rec_Index_Text, .Rec_Index_Value .Death_Index_Value, .Death_Index_Value{
+        font-size: calc(3px + 1vw);
+    }
+
+    .ButtonHolder{
+        height: calc(50px + 1vw);
+    }
+    .InteractionText{
+        font-size: calc(8px + 1vw);
+    }
+
+    .BarD, .BarR{
+        width: calc(10px + 2vw);
     }
 }
 
@@ -34,18 +65,30 @@
         transform: translate(0, calc(200px + 20vw)) scale(1,-1);
     }
 
-    #MaxY, #MinY{
+    .MaxY, .MinY, #IndexTitle{
         font-size: calc(12px + 1vw);
+    }
+
+    .Rec_Index_Text, .Rec_Index_Value, .Death_Index_Value{
+        font-size: calc(5px + 1vw);
+    }
+
+    .ButtonHolder{
+        height: calc(100px + 1vw);
+    }
+
+    .InteractionText{
+        font-size: calc(12px + 1vw);
+    }
+
+    .BarD, .BarR{
+        width: calc(12px + 2vw);
     }
 }
 
-.BarD{
-    width: calc(12px + 2vw);
-}
 
-.BarR{
-    width: calc(12px + 2vw);
-}
+
+
 
 #QuoteContainer{
     border: solid 2px #ffc94a;

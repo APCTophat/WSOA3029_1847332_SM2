@@ -52,33 +52,73 @@
                 <rect width="100%" height="100%" fill="#6f6282"/>
                 <g id="DeathGraph">
                     <g class="GraphBars">
-                        <rect class="BarD" id=DBar1 x=11% y=11% height="20%" fill="#a1a1a1" fill-opacity="0.2"/> 
-                        <rect class="BarD" id=DBar2 x=21% y=11% height="80%" fill="#a1a1a1" fill-opacity="0.2"/> 
-                        <rect class="BarD" id=DBar3 x=31% y=11% height="50%" fill="#a1a1a1" fill-opacity="0.2"/> 
-                        <rect class="BarD" id=DBar4 x=41% y=11% height="80%" fill="#a1a1a1" fill-opacity="0.2"/> 
-                        <rect class="BarD" id=DBar5 x=51% y=11% height="80%" fill="#a1a1a1" fill-opacity="0.2"/> 
+                        <rect class="BarD" id=DBar1 x=11% y=11% height="20%" fill="#a1a1a1" fill-opacity="1"/> 
+                        <rect class="BarD" id=DBar2 x=21% y=11% height="80%" fill="#a1a1a1" fill-opacity="1"/> 
+                        <rect class="BarD" id=DBar3 x=31% y=11% height="50%" fill="#a1a1a1" fill-opacity="1"/> 
+                        <rect class="BarD" id=DBar4 x=41% y=11% height="80%" fill="#a1a1a1" fill-opacity="1"/> 
+                        <rect class="BarD" id=DBar5 x=51% y=11% height="80%" fill="#a1a1a1" fill-opacity="1"/> 
                     </g>
                     <g class=GraphText>
-                        <text id="MinY" x=5% y=85% fill="rgba(161, 161, 161, 0.2)" font-size="calc(5px + 1vw)">0</text>
-                        <text id="MaxY" x=3% y=7% fill="rgba(161, 161, 161, 0.2)" font-size="calc(5px + 1vw)">7000</text>
+                        <text class="MinY" id="MinYS" x=5% y=85% fill="rgba(161, 161, 161, 1)" font-size="calc(5px + 1vw)">0</text>
+                        <text class="MaxY" id="MaxYS" x=3% y=7% fill="rgba(161, 161, 161, 1)" font-size="calc(5px + 1vw)">7000</text>
                     </g>
                     <line id="lineY" x1="8%" x2="8%" y1="9%" y2="89%" style="stroke:rgb(65,57,77);stroke-width:2;stroke-opacity:0.2"/>
                     <line id="lineX" x1="8%" x2="60.5%" y1="89%" y2="89%" style="stroke:rgb(65,57,77);stroke-width:2;stroke-opacity:0.2"/>
                 </g>
                 <g id="RecoveredGraph">
                     <g class="GraphBars">
-                        <rect class="BarR" id=RecBar1 x=10% y=10% height="40%" fill="#2d222a" fill-opacity="1"/> 
-                        <rect class="BarR" id=RecBar2 x=20% y=10% height="50%" fill="#544130" fill-opacity="1"/> 
+                        <rect class="BarR" id=RecBar1 x=10% y=10% height="40%" fill="#ffc94a" fill-opacity="1"/> 
+                        <rect class="BarR" id=RecBar2 x=20% y=10% height="50%" fill="#a3803c" fill-opacity="1"/> 
                         <rect class="BarR" id=RecBar3 x=30% y=10% height="60%" fill="#7c6136" fill-opacity="1"/> 
-                        <rect class="BarR" id=RecBar4 x=40% y=10% height="70%" fill="#a3803c" fill-opacity="1"/> 
-                        <rect class="BarR" id=RecBar5 x=50% y=10% height="80%" fill="#ffc94a" fill-opacity="1"/> 
+                        <rect class="BarR" id=RecBar4 x=40% y=10% height="70%" fill="#544130" fill-opacity="1"/> 
+                        <rect class="BarR" id=RecBar5 x=50% y=10% height="80%" fill="#2d222a" fill-opacity="1"/> 
                     </g>
                     <g class=GraphText>
-                        <text id="MinY" x=4% y=90% fill="whitesmoke" font-size="calc(5px + 1vw)">0</text>
-                        <text id="MaxY" x=1% y=12% fill="whitesmoke" font-size="calc(5px + 1vw)">300K</text>
+                        <text class="MinY" id="MinYB" x=4% y=90% fill="whitesmoke" font-size="calc(5px + 1vw)">0</text>
+                        <text class="MaxY" id="MaxYB" x=1% y=12% fill="whitesmoke" font-size="calc(5px + 1vw)">300K</text>
                     </g>
                     <line id="lineY" x1="7.5%" x2="7.5%" y1="10%" y2="90%" style="stroke:rgb(65,57,77);stroke-width:2"/>
                     <line id="lineX" x1="7.5%" x2="60%" y1="90%" y2="90%" style="stroke:rgb(65,57,77);stroke-width:2"/>
+                </g>
+                <g id="Index">
+                    <g class="DeathIndex">
+                        <text class="Death_Index_Value" id="Death_Index_Value_1" x="95%" y="25%" font-size="calc(5px + 1vw)" text-anchor="middle" fill="#a1a1a1">300000</text>
+                        <text class="Death_Index_Value" id="Death_Index_Value_2" x="95%" y="40%" font-size="calc(5px + 1vw)" text-anchor="middle" fill="#a1a1a1">300000</text>
+                        <text class="Death_Index_Value" id="Death_Index_Value_3" x="95%" y="55%" font-size="calc(5px + 1vw)" text-anchor="middle" fill="#a1a1a1">300000</text>
+                        <text class="Death_Index_Value" id="Death_Index_Value_4" x="95%" y="70%" font-size="calc(5px + 1vw)" text-anchor="middle" fill="#a1a1a1">300000</text>
+                        <text class="Death_Index_Value" id="Death_Index_Value_5" x="95%" y="85%" font-size="calc(5px + 1vw)" text-anchor="middle" fill="#a1a1a1">300000</text> 
+                    </g>
+                    <g class="RecoveredIndex">
+                        <circle id="Rec_Index_Circle_1" cx="80%" cy="25%" fill="#ffc94a" opacity="1"/>
+                        <circle id="Rec_Index_Circle_2" cx="80%" cy="40%" fill="#a3803c" opacity="1"/>
+                        <circle id="Rec_Index_Circle_3" cx="80%" cy="55%" fill="#7c6136" opacity="1"/>
+                        <circle id="Rec_Index_Circle_4" cx="80%" cy="70%" fill="#544130" opacity="1"/>
+                        <circle id="Rec_Index_Circle_5" cx="80%" cy="85%" fill="#2d222a" opacity="1"/>
+
+                        <text class="Rec_Index_Text" id="Rec_Index_Text_1" x="70%" y="25%" font-size="calc(5px + 1vw)" text-anchor="middle" fill="#F5F5F5">July 6th</text>
+                        <text class="Rec_Index_Text" id="Rec_Index_Text_2" x="70%" y="40%" font-size="calc(5px + 1vw)" text-anchor="middle" fill="#F5F5F5">August 6th</text>
+                        <text class="Rec_Index_Text" id="Rec_Index_Text_3" x="70%" y="55%" font-size="calc(5px + 1vw)" text-anchor="middle" fill="#F5F5F5">September 6th</text>
+                        <text class="Rec_Index_Text" id="Rec_Index_Text_4" x="70%" y="70%" font-size="calc(5px + 1vw)" text-anchor="middle" fill="#F5F5F5">October 6th</text>
+                        <text class="Rec_Index_Text" id="Rec_Index_Text_5" x="70%" y="85%" font-size="calc(5px + 1vw)" text-anchor="middle" fill="#F5F5F5">November 6th</text>
+
+                        <text class="Rec_Index_Value" id="Rec_Index_Value_1" x="88%" y="25%" font-size="calc(5px + 1vw)" text-anchor="middle" fill="#F5F5F5">300000</text>
+                        <text class="Rec_Index_Value" id="Rec_Index_Value_2" x="88%" y="40%" font-size="calc(5px + 1vw)" text-anchor="middle" fill="#F5F5F5">300000</text>
+                        <text class="Rec_Index_Value" id="Rec_Index_Value_3" x="88%" y="55%" font-size="calc(5px + 1vw)" text-anchor="middle" fill="#F5F5F5">300000</text>
+                        <text class="Rec_Index_Value" id="Rec_Index_Value_4" x="88%" y="70%" font-size="calc(5px + 1vw)" text-anchor="middle" fill="#F5F5F5">300000</text>
+                        <text class="Rec_Index_Value" id="Rec_Index_Value_5" x="88%" y="85%" font-size="calc(5px + 1vw)" text-anchor="middle" fill="#F5F5F5">300000</text>       
+                    </g>
+                    
+                </g>
+            </svg>
+            <svg class="ButtonHolder" width=100% height="Calc(100px + 1vw)">
+                <rect width="100%" height="100%" fill="#6f6282"/>
+                <g class="Static">
+                    <rect class="InteractionButtons" id="RecButton" width=25% height=80% x=2% y=10% fill="#ffc94a" stroke="Black" stroke-width=2 fill-opacity="1"></rect>
+                    <text class="InteractionText" id="RecButtonText"x="14.5%" y="55%" font-size='calc(12px + 1vw)' text-anchor="middle" fill="#000000">Recovered</text>
+                    <rect class="InteractionButtons" id="DeathButton" width=25% height=80% x=37.5% y=10% fill="#b5b5b5" stroke="Black" stroke-width=2 fill-opacity="1"></rect>
+                    <text class="InteractionText" id="DeathButtonText"x="50%" y="55%" font-size='calc(12px + 1vw)' text-anchor="middle" fill="#000000">Deaths</text>
+                    <rect class="InteractionButtons" id="BothButton" width=25% height=80% x=73% y=10% fill="#544130" stroke="Black" stroke-width=2 fill-opacity="1"></rect>
+                    <text class="InteractionText" id="BothButtonText" x="85.5%" y="55%" font-size='calc(12px + 1vw)' text-anchor="middle" fill="#000000">Comparison</text>
                 </g>
             </svg>
     </article>

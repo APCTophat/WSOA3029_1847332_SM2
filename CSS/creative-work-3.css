@@ -40,7 +40,7 @@
         font-size: calc(5px + 1vw);
     }
 
-    .Rec_Index_Text, .Rec_Index_Value .Death_Index_Value, .Death_Index_Value{
+    .Rec_Index_Text, .Rec_Index_Value .Death_Index_Value{
         font-size: calc(3px + 1vw);
     }
 

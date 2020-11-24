@@ -6,6 +6,13 @@
     .Graph{
         transform: translate(0, calc(50px + 20vw)) scale(1,-1);
     }
+
+    .IndexText{
+        font-size: calc(5px + 1vw);
+    }
+    .GraphText{
+        font-size: calc(3px + 1vw);
+    }
 }
 
 @media only screen and (min-width: 400px) {
@@ -16,7 +23,12 @@
     .Graph{
         transform: translate(0, calc(100px + 20vw)) scale(1,-1);
     }  
-  
+    .IndexText{
+        font-size: calc(5px + 1vw);
+    }
+    .GraphText{
+        font-size: calc(3px + 1vw);
+    }
 }
 
 @media only screen and (min-width: 700px) {
@@ -26,6 +38,14 @@
 
     .Graph{
         transform: translate(0, calc(200px + 20vw)) scale(1,-1);
+    }
+
+    .IndexText{
+        font-size: calc(10px + 1vw);
+    }
+
+    .GraphText{
+        font-size: calc(5px + 1vw);
     }
 }
 
@@ -42,10 +62,3 @@
     padding-right: 5px;
 }
 
-#TextY{
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform-origin: 0 0;
-    transform: rotate(10deg);
-}

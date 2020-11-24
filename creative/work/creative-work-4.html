@@ -51,7 +51,7 @@
                 <rect width="100%" height="100%" fill="#6f6282"/>
                 <g class="Graph">
                     <!--Line Elements-->
-                    <line id="lineY" x1="5%" x2="5%" y1="10%" y2="90%" style="stroke:rgb(65,57,77);stroke-width:2"/>
+                    <line id="lineY" x1="5%" x2="5%" y1="10%" y2="89.2%" style="stroke:rgb(65,57,77);stroke-width:2"/>
                     <line id="lineX" x1="5%" x2="55%" y1="10%" y2="10%" style="stroke:rgb(65,57,77);stroke-width:2"/>
                     
 
@@ -61,11 +61,37 @@
                     <circle id="CircleSeptember" cx="30%" cy="50%" r=1vw fill="#ffc94a"/>
                     <circle id="CircleOctober" cx="40%" cy="50%" r=1vw fill="#ffc94a"/>
                     <circle id="CircleNovember" cx="50%" cy="50%" r=1vw fill="#ffc94a"/>
+
+                    <!--XLineMarkers-->
+                    <line id="XlineJuly" x1="10%" x2="10%" y1="7.5%" y2="12.5%" style="stroke:rgb(65,57,77);stroke-width:2"/>
+                    <line id="XlineAugust" x1="20%" x2="20%" y1="7.5%" y2="12.5%" style="stroke:rgb(65,57,77);stroke-width:2"/>
+                    <line id="XlineSeptember" x1="30%" x2="30%" y1="7.5%" y2="12.5%" style="stroke:rgb(65,57,77);stroke-width:2"/>
+                    <line id="XlineOctober" x1="40%" x2="40%" y1="7.5%" y2="12.5%" style="stroke:rgb(65,57,77);stroke-width:2"/>
+                    <line id="XlineNovember" x1="50%" x2="50%" y1="7.5%" y2="12.5%" style="stroke:rgb(65,57,77);stroke-width:2"/>
+
+                    <!--YLineMarkers-->
+                    <line id="XlineOctober" x1="4%" x2="6%" y1="36.4%" y2="36.4%" style="stroke:rgb(65,57,77);stroke-width:2"/>
+                    <line id="XlineNovember" x1="4%" x2="6%" y1="62.8%" y2="62.8%" style="stroke:rgb(65,57,77);stroke-width:2"/>
+                    <line id="XlineNovember" x1="4%" x2="6%" y1="89.2%" y2="89.2%" style="stroke:rgb(65,57,77);stroke-width:2"/>
                 </g>
                 <g class="GraphText">
-                    <text class="MinY" id="MinYS" x=3% y=90% fill="#f5f5f5" font-size="calc(5px + 1vw)">0</text>
-                    <text class="MaxY" id="MaxYS" x=2% y=12.5% fill="#f5f5f5" font-size="calc(5px + 1vw)">3%</text>
-                    <text class="GraphText" id="TextY" x=2% y=50% fill="#f5f5f5" font-size="calc(5px + 1vw)">Fatality Rate</text>
+                    <text class="GraphText" id="MinYS" x=3% y=90% fill="#f5f5f5" font-size="calc(5px + 1vw)">0</text>
+                    <text class="GraphText" id="MaxYS" x=2% y=12.5% fill="#f5f5f5" font-size="calc(5px + 1vw)">3%</text>
+                    <text class="GraphText" id="TextY" x=3% y=5% fill="#f5f5f5" font-size="calc(5px + 1vw)">Fatality Rate</text>
+                    <!--X Line Text-->
+                   
+                    <text class="GraphText" id="TextX3" x=28% y=96% fill="#f5f5f5" font-size="calc(5px + 1vw)">Months</text>
+                   
+                </g>
+                <g class="Index">
+                <rect x="60%" y="10%" width="35%" height="60%" fill="#41394d" stroke=" #ffc94a" stroke-width="2"/>
+                <text class="IndexText" id="StaticDate" x=62% y=20% fill="#f5f5f5" font-size="calc(5px + 1vw)">Date:</text>
+                <text class="IndexText" id="StaticActive" x=62% y=40% fill="#f5f5f5" font-size="calc(5px + 1vw)">Active:</text>
+                <text class="IndexText" id="StaticRate" x=62% y=60% fill="#f5f5f5" font-size="calc(5px + 1vw)">Fatality Rate:</text>
+
+                <text class="IndexText" id="ChangeDate" x=75% y=20% fill="#f5f5f5" font-size="calc(5px + 1vw)"></text>
+                <text class="IndexText" id="ChangeActive" x=75% y=40% fill="#f5f5f5" font-size="calc(5px + 1vw)"></text>
+                <text class="IndexText" id="ChangeRate" x=75% y=60% fill="#f5f5f5" font-size="calc(5px + 1vw)"></text>
                 </g>
 
             </svg>

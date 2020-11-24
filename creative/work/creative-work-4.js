@@ -159,51 +159,51 @@ function myFunction(x) {
   let NovemberCircle = document.getElementById("CircleNovember");
   
 JulyCircle.addEventListener('mouseout', function(){
-  d3.select('#CircleJuly').transition().style("fill", '#ffc94a')
+  d3.select('#CircleJuly').transition().style("fill", '#2d222a')
 })
 AugustCircle.addEventListener('mouseout', function(){
-  d3.select('#CircleAugust').transition().style("fill", '#ffc94a')
+  d3.select('#CircleAugust').transition().style("fill", '#544130')
 })
 SeptemberCircle.addEventListener('mouseout', function(){
-  d3.select('#CircleSeptember').transition().style("fill", '#ffc94a')
+  d3.select('#CircleSeptember').transition().style("fill", '#7c6136')
 })
 OctoberCircle.addEventListener('mouseout', function(){
-  d3.select('#CircleOctober').transition().style("fill", '#ffc94a')
+  d3.select('#CircleOctober').transition().style("fill", '#a3803c')
 })
 NovemberCircle.addEventListener('mouseout', function(){
   d3.select('#CircleNovember').transition().style("fill", '#ffc94a')
 })
 
 JulyCircle.addEventListener('mouseover', function(){
-    d3.select('#CircleJuly').transition().style("fill", '#a3803c')
+    d3.select('#CircleJuly').transition().style("fill", '#ffd980')
     let TheDate = "6th July"
     let TheCase = Active06_07_2020
     let TheFR = Number((Fatality1).toFixed(2))
     DisplayInfo(TheDate,TheCase,TheFR)
 })
 AugustCircle.addEventListener('mouseover', function(){
-  d3.select('#CircleAugust').transition().style("fill", '#a3803c')
+  d3.select('#CircleAugust').transition().style("fill", '#ffd980')
   let TheDate = "6th August"
   let TheCase = Active06_08_2020
   let TheFR = Number((Fatality2).toFixed(2))
   DisplayInfo(TheDate,TheCase,TheFR)
 })
 SeptemberCircle.addEventListener('mouseover', function(){
-  d3.select('#CircleSeptember').transition().style("fill", '#a3803c')
+  d3.select('#CircleSeptember').transition().style("fill", '#ffd980')
   let TheDate = "6th September"
   let TheCase = Active06_09_2020
   let TheFR = Number((Fatality3).toFixed(2))
   DisplayInfo(TheDate,TheCase,TheFR)
 })
 OctoberCircle.addEventListener('mouseover', function(){
-  d3.select('#CircleOctober').transition().style("fill", '#a3803c')
+  d3.select('#CircleOctober').transition().style("fill", '#ffd980')
   let TheDate = "6th October"
   let TheCase = Active06_10_2020
   let TheFR = Number((Fatality4).toFixed(2))
   DisplayInfo(TheDate,TheCase,TheFR)
 })
 NovemberCircle.addEventListener('mouseover', function(){
-  d3.select('#CircleNovember').transition().style("fill", '#a3803c')
+  d3.select('#CircleNovember').transition().style("fill", '#ffd980')
   let TheDate = "6th November"
   let TheCase = Active06_11_2020
   let TheFR = Number((Fatality5).toFixed(2))
